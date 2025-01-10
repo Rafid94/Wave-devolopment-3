@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>interoduction of functions</head>
+    <body>
+        <button type="button" onclick="myfunction()">click here</button>
+        <p id="myp1"></p>
+        <p id="myp2"></p>
+        <script>
+            var x=y=10;
+            function myfunction(){
+                var x=10; 
+                document.getElementById("myp2").innerHTML=y*x;
+            }
+            document.getElementById("myp1").innerHTML=y;
+             document.getElementById("myp2").innerHTML = x;
+        </script><br>
+        <h1 id='myH'></h1>
+        
+        <p id="myP"></p>
+        
+        <script>
+
+            document.getElementById("myH").innerHTML = "Javascript my header"
+
+            document.getElementById("myP").innerHTML = "my first paragraph"
+
+            var num1 = 4;
+
+            num2 = 2
+
+            var sum = num1 + num2
+
+        </script><br>
+        <h2>Javascript Statement</h2>
+        <p>
+            A <b>Javascript Program</b> is a list of  <b> Statement</b> to be executed by a laptop.
+        </p>
+        <p id="demo"></p>
+        <script>
+            var x,y,z;  //statement1
+            x=4;        //statement2
+            y=6;        //statement3
+            z=x+y;      //statement4
+            document.getElementById("demo").innerHTML="The Value of z is "+z+"."
+        </script><br>
+
+        <h2>Operator</h2>
+        <p id="demo"></p>
+        <script>
+            <!--Addition-->
+            //*use =,-,*,/operators*//
+            var x = 4;
+            var y = 10;
+            var z = x+y;
+            document.getElementById("demo").innerHTML = z;
+        </script>
+    </body>
+</html>
