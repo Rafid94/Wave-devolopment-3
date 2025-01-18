@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Javascript Arrays</h2>
+        <p id="demo"></p>
+        <script>
+            var sports =[
+                "Cricker",
+                "Football",
+                "Hocky"
+            ];
+            document.getElementById("demo").innerHTML=sports[0];
+        </script>
+
+        <script>
+            var cars=[
+                "Rolls-Royce",
+                "Ferrai",
+                "Bugati",
+                "cadiluck"
+            ]
+            document.write(cars.join("#"))
+            document.write("<br>")
+            document.write(cars.pop())
+            document.write("<br>")
+            document.write(cars)
+            document.write("<br>")
+              document.write(cars.pop())
+               document.write("<br>")
+                document.write(cars)
+
+
+        </script>
+        <p id="defalt"></p>
+        <script>
+            function add(x,y) {
+                return x+y;
+            }
+            function average(x,y){
+                return add(x,y)/2;
+            }
+            let result=average(50,60);
+            document.getElementById("defalt").innerHTML =result;
+        </script>
+    </body>
+</html>
