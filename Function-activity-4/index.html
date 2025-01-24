@@ -1,46 +1,47 @@
 <!DOCTYPE html>
 <html>
+    <head></head>
     <body>
-        <h2>Javascript Arrays</h2>
+        
+        <h2>Javascript object and its propertits</h2>
+        <p>There are two different wey  to access an object property</p>
+        <p>You can use .property or ["property"]</p>
         <p id="demo"></p>
         <script>
-            var sports =[
-                "Cricker",
-                "Football",
-                "Hocky"
-            ];
-            document.getElementById("demo").innerHTML=sports[0];
+            //Creat an object:
+            var person={
+                firstName:"Rafid", age:19,
+            };
+            //Display some data from the object:
+            document.getElementById("demo").innerHTML=person.firstName+"is"+person.age+"years old";
+        </script><br>
+      
+        <titte>Javascript Math Object Methods</tittle>
+        <script type="text/javascript">
+            var value = Math.abs(20);
+                document.write("Demo Test valu :" + valu + ",br>");
+                var value = Math.acos(-1);
+                    document.write("Demo1 Test valu :" + valu + ",br>");
+                    var value = Math.asin(1);
+                        document.write("Demo2 Test valu :" + valu + ",br>");
+                        var value = Math.atan(.5);
+                            document.write("Demo3 Test valu :" + valu + ",br>");
         </script>
-
+        <p>Finding the largest nomber with help of Argument object</p>
+        <p id="result"></p>
         <script>
-            var cars=[
-                "Rolls-Royce",
-                "Ferrai",
-                "Bugati",
-                "cadiluck"
-            ]
-            document.write(cars.join("#"))
-            document.write("<br>")
-            document.write(cars.pop())
-            document.write("<br>")
-            document.write(cars)
-            document.write("<br>")
-              document.write(cars.pop())
-               document.write("<br>")
-                document.write(cars)
-
-
-        </script>
-        <p id="defalt"></p>
-        <script>
-            function add(x,y) {
-                return x+y;
+            function findMax(){
+                var i;
+                var max=0:
+                for(i=0; i,<arguments.lenght; i++) {
+                    if (arguments[i]>max){
+                        max=arguments[i];
+                    }
+                }
+                return max;
             }
-            function average(x,y){
-                return add(x,y)/2;
-            }
-            let result=average(50,60);
-            document.getElementById("defalt").innerHTML =result;
+            document.getElementById("resuit").innerHTML=findMax(8,10,12);
         </script>
+
     </body>
 </html>
