@@ -24,7 +24,28 @@
                 }
             }
             let myCar =new Model("BMW","SUPRAMK4");
-            document.getElementById("details").innerHTML=myCar.show();
+            document.getElementById("details").innerHTML=myCar.show();<h2>Javascript class</h2>
+        <p>How to use Javascript class</p>
+        <p id="student1"></p>
+        <script>
+            //creting a class
+            class student {
+                constructor(name,year) {
+                    this.name=name;
+                    this.year=year;
+                }
+                //creating age method for class student
+                age(){
+                    let date=new Date();
+                    return date.getFullYear()-this.year;
+                }
+
+            }
+            //use student class with two objects
+            student1 = new student("RAfid",2006);
+            document.getElementById("student1").innerHTML="My name is" + student1.name + ".I born in" + student1.year + ".And my age" + student1.age();
+            </script><br>
+
         </script>
     </body>
 </html>

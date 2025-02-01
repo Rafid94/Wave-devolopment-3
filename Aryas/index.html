@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <p id="result"></p>
+        <p id="valu"></p>
+        <p id="valu1"></p>
+
+        <button onclick="ascending()">Ascending</button>
+        <button onclick="descending()">descending</button>
+        <script>
+            var findvalues=[22,32,69,2,3,102]
+            function ascending(){
+                findvalues.sort(function(a,b){return a-b})
+                document.getElementById("result").innerHTML=findvalues
+            }
+            var fin
+            dvalues=[22,32,69,2,3,102]
+            function descending() {
+                    findvalues.sort(function (a, b) { return b-a })
+                    document.getElementById("valu").innerHTML = findvalues
+                }
+                var findvalues=[20,15,30,50,75]
+                function mapping(findvalues)
+                {
+                    return findvalues*2
+                }
+                var result=findvalues.map(mapping)
+                document.getElementById("valu1").innerHTML=result
+        </script>
+    </body>
+</html>
